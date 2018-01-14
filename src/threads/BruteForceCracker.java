@@ -10,7 +10,7 @@ package threads;
 import java.util.Random;
 
 public class BruteForceCracker {
-	static long code = (long)(new Random().nextDouble() * 1_000_000_000);
+	static long code = (long)(new Random().nextDouble() * 1000);
 	
 	static long startTime;
 	static long endTime;
@@ -31,8 +31,10 @@ public class BruteForceCracker {
 	
 	public static boolean checkCode(long p){
 		if(p == code){
+			System.out.println("true");
 			return true;
 		}else{
+		//	System.out.println("false");
 			return false;
 		}
 	}
